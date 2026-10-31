@@ -1,0 +1,16 @@
+name: scond work flow
+on: push
+jobs:
+    hello-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "welcome"
+              run: echo "Welcome"
+    
+    bye-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "bye"
+              run: echo "Bye"
