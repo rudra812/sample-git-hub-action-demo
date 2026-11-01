@@ -13,5 +13,5 @@ jobs:
       - name: Bye git hub actions
         run: echo "Bye github actions "
       - name: exit code intentionally
-        run: exit 1
+        run: exit 0
     
