@@ -12,4 +12,6 @@ jobs:
         run: echo "Hello this is first work flow github actions"
       - name: Bye git hub actions
         run: echo "Bye github actions "
+      - name: exit code intentionally
+        run: exit 1
     
