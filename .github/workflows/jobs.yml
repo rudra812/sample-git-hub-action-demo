@@ -1,0 +1,38 @@
+name: Job files
+on: push
+
+jobs:
+    exist-html:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+            
+            - name: existance html
+              run: test -f index.html
+    
+    exist-js:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+            
+            - name: existance js
+              run: test -f index.js
+
+    
+    validate-code:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+
+            - name: validate html code
+              run: npx htmlhint index.html
+
+            - name: validate js code
+              run: node --script index.js
+
