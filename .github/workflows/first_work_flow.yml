@@ -1,6 +1,7 @@
-name: first work flow
+name: first_work_flow
 
-on: workflow_dispatch
+# on: workflow_dispatch
+on: push
 
 jobs:
   first_work_flow:
