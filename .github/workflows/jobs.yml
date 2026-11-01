@@ -34,5 +34,5 @@ jobs:
               run: npx htmlhint index.html
 
             - name: validate js code
-              run: node --script index.js
+              run: node -c index.js
 
